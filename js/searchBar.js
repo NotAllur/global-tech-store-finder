@@ -1,7 +1,6 @@
 const searchInput = document.getElementById("search");
-searchInput.value = ""; // Clear search input value
+searchInput.value = "";
 
-// Implement search functionality
 searchInput.addEventListener("input", function () {
   let searchText = this.value.toLowerCase();
   let countryNames = document.getElementsByClassName("countryName");
