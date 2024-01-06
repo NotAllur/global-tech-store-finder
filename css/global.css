@@ -17,6 +17,7 @@ header {
   top: 0;
   padding: 1%;
   backdrop-filter: blur(25px);
+  z-index: 1000;
 }
 
 #search {
