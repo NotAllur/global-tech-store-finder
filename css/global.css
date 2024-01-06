@@ -1,4 +1,6 @@
-/* General styles */
+:root {
+  --backgroundBlur: 10px;
+}
 body {
   margin: 0;
   background-color: var(--mainColour);
@@ -17,7 +19,22 @@ header {
   top: 0;
   padding: 1%;
   backdrop-filter: blur(25px);
-  z-index: 1000;
+}
+
+@supports (-webkit-backdrop-filter: blur(var(--backgroundBlur))) or
+  (backdrop-filter: blur(var(--backgroundBlur))) {
+  header {
+    backdrop-filter: blur(var(--backgroundBlur));
+    -webkit-backdrop-filter: blur(var(--backgroundBlur));
+  }
+}
+@supports not (
+  (-webkit-backdrop-filter: blur(var(--backgroundBlur))) or
+    (backdrop-filter: blur(var(--backgroundBlur)))
+) {
+  header {
+    background-color: var(--mainColour);
+  }
 }
 
 #search {
@@ -76,7 +93,7 @@ footer > p {
   text-align: center;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   header {
     flex-direction: column;
     align-items: center;
@@ -86,20 +103,24 @@ footer > p {
   }
 
   #search {
-    margin: 10px; /* Adjust margin for better spacing */
-    width: calc(100% - 20px); /* Limit width to prevent overflow */
+    margin: 10px;
+    width: calc(100% - 20px);
   }
   header > ul {
     display: flex;
-    justify-content: space-between; /* Position list items on opposite sides */
-    width: calc(100% - 20px); /* Adjust width for better alignment */
+    justify-content: space-between;
+    width: calc(100% - 20px);
   }
 
   header > ul li {
-    margin: 0; /* Remove default margin */
+    margin: 0;
   }
 }
 @media screen and (max-width: 550px) {
+  header > h1 {
+    font-size: 1.3em;
+  }
+
   table {
     overflow-x: auto;
     display: block;
@@ -111,12 +132,12 @@ footer > p {
   th,
   td {
     word-break: break-word;
-    white-space: normal; /* Allow text wrap */
-    text-align: left; /* Adjust text alignment */
-    padding: 8px; /* Add padding for better cell spacing */
+    white-space: normal;
+    text-align: left;
+    padding: 8px;
+    font-size: smaller;
   }
 
-  /* Hide specific columns based on class */
   .credits {
     display: none;
   }

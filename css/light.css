@@ -9,3 +9,7 @@
 #lightSwitch {
   filter: invert(0%);
 }
+header {
+  background-color: var(--mainColour);
+  backdrop-filter: none !important;
+}
