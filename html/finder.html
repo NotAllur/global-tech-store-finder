@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Look up local shops and marketplaces from around the world."
+    />
+    <title>Global Tech Store Finder</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web"
+    />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/dark.css" id="theme" />
+  </head>
+  <body>
+    <header>
+      <h1>Global Tech Store & Marketplace Finder</h1>
+      <input type="text" id="search" placeholder="Search" />
+      <ul>
+        <li>
+          <img src="../media/day-sunny-svgrepo-com.svg" id="lightSwitch" />
+        </li>
+        <li>
+          <a href="https://github.com/NotAllur/global-tech-store-finder">
+            <img src="../media/github-mark-white.svg" id="githubLogo" />
+          </a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <table>
+        <tbody>
+          <tr>
+            <th class="countryName">Country</th>
+            <th class="links">Shops/Marketplaces (New)</th>
+            <th class="links">Shops/Marketplaces (Used/Refurbished)</th>
+            <th class="credits">Credits and Special Thanks to</th>
+          </tr>
+        </tbody>
+        <tbody id="countryTableBody">
+          <tr>
+            <td id="afghanistan" class="countryName">Afghanistan</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="albania" class="countryName">Albania</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="algeria" class="countryName">Algeria</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="andorra" class="countryName">Andorra</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="angola" class="countryName">Angola</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="antigua_and_barbuda" class="countryName">
+              Antigua and Barbuda
+            </td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="argentina" class="countryName">Argentina</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="armenia" class="countryName">Armenia</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="australia" class="countryName">Australia</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="austria" class="countryName">Austria</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="azerbaijan" class="countryName">Azerbaijan</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="the_bahamas" class="countryName">The Bahamas</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="bahrain" class="countryName">Bahrain</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="bangladesh" class="countryName">Bangladesh</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="barbados" class="countryName">Barbados</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="belarus" class="countryName">Belarus</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="belgium" class="countryName">Belgium</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="belize" class="countryName">Belize</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="benin" class="countryName">Benin</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="bhutan" class="countryName">Bhutan</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="bolivia" class="countryName">Bolivia</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="bosnia_and_herzegovina" class="countryName">
+              Bosnia and Herzegovina
+            </td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="botswana" class="countryName">Botswana</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="brazil" class="countryName">Brazil</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="brunei" class="countryName">Brunei</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="bulgaria" class="countryName">Bulgaria</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="burkina_faso" class="countryName">Burkina Faso</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="burundi" class="countryName">Burundi</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="cabo_verde" class="countryName">Cabo Verde</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="cambodia" class="countryName">Cambodia</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="cameroon" class="countryName">Cameroon</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="canada" class="countryName">Canada</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="central_african_republic" class="countryName">
+              Central African Republic
+            </td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="chad" class="countryName">Chad</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="chile" class="countryName">Chile</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="china-mainland" class="countryName">China (Mainland)</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="colombia" class="countryName">Colombia</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="comoros" class="countryName">Comoros</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="congo,_democratic_republic_of_the" class="countryName">
+              Congo, Democratic Republic of the
+            </td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="congo,_republic_of_the" class="countryName">
+              Congo, Republic of the
+            </td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="costa_rica" class="countryName">Costa Rica</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="cote_d'ivoire" class="countryName">Cote d'Ivoire</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="croatia" class="countryName">Croatia</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="cuba" class="countryName">Cuba</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="cyprus_(roc)" class="countryName">Cyprus (ROC)</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="czech_republic" class="countryName">Czech Republic</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="denmark" class="countryName">Denmark</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="djibouti" class="countryName">Djibouti</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="dominica" class="countryName">Dominica</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="dominican_republic" class="countryName">
+              Dominican Republic
+            </td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="east_timor_(timor-leste)" class="countryName">
+              East Timor (Timor-Leste)
+            </td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="ecuador" class="countryName">Ecuador</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="egypt" class="countryName">Egypt</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="el_salvador" class="countryName">El Salvador</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="equatorial_guinea" class="countryName">
+              Equatorial Guinea
+            </td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="eritrea" class="countryName">Eritrea</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="estonia" class="countryName">Estonia</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="eswatini" class="countryName">Eswatini</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="ethiopia" class="countryName">Ethiopia</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="fiji" class="countryName">Fiji</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="finland" class="countryName">Finland</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="france" class="countryName">France</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="gabon" class="countryName">Gabon</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="the_gambia" class="countryName">The Gambia</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="georgia" class="countryName">Georgia</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="germany" class="countryName">Germany</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="ghana" class="countryName">Ghana</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="greece" class="countryName">Greece</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="grenada" class="countryName">Grenada</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="guatemala" class="countryName">Guatemala</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="guinea" class="countryName">Guinea</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="guinea-bissau" class="countryName">Guinea-Bissau</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="guyana" class="countryName">Guyana</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="haiti" class="countryName">Haiti</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="honduras" class="countryName">Honduras</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="hungary" class="countryName">Hungary</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="iceland" class="countryName">Iceland</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="india" class="countryName">India</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="indonesia" class="countryName">Indonesia</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="iran" class="countryName">Iran</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="iraq" class="countryName">Iraq</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="ireland" class="countryName">Ireland</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="israel" class="countryName">Israel</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="italy" class="countryName">Italy</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="jamaica" class="countryName">Jamaica</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="japan" class="countryName">Japan</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="jordan" class="countryName">Jordan</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="kazakhstan" class="countryName">Kazakhstan</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="kenya" class="countryName">Kenya</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="kiribati" class="countryName">Kiribati</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="south_korea" class="countryName">South Korea</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="kosovo" class="countryName">Kosovo</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="kuwait" class="countryName">Kuwait</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="kyrgyzstan" class="countryName">Kyrgyzstan</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="laos" class="countryName">Laos</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="latvia" class="countryName">Latvia</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="lebanon" class="countryName">Lebanon</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="lesotho" class="countryName">Lesotho</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="liberia" class="countryName">Liberia</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="libya" class="countryName">Libya</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="liechtenstein" class="countryName">Liechtenstein</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="lithuania" class="countryName">Lithuania</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="luxembourg" class="countryName">Luxembourg</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="madagascar" class="countryName">Madagascar</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="malawi" class="countryName">Malawi</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="malaysia" class="countryName">Malaysia</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="maldives" class="countryName">Maldives</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="mali" class="countryName">Mali</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="malta" class="countryName">Malta</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="marshall_islands" class="countryName">Marshall Islands</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="mauritania" class="countryName">Mauritania</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="mauritius" class="countryName">Mauritius</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="mexico" class="countryName">Mexico</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="micronesia" class="countryName">Micronesia</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="moldova" class="countryName">Moldova</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="monaco" class="countryName">Monaco</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="mongolia" class="countryName">Mongolia</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="montenegro" class="countryName">Montenegro</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="morocco" class="countryName">Morocco</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="mozambique" class="countryName">Mozambique</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="myanmar_(burma)" class="countryName">Myanmar (Burma)</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="namibia" class="countryName">Namibia</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="nauru" class="countryName">Nauru</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="nepal" class="countryName">Nepal</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="netherlands" class="countryName">Netherlands</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="new_zealand" class="countryName">New Zealand</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="nicaragua" class="countryName">Nicaragua</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="niger" class="countryName">Niger</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="nigeria" class="countryName">Nigeria</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="north_macedonia" class="countryName">North Macedonia</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="norway" class="countryName">Norway</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="oman" class="countryName">Oman</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="pakistan" class="countryName">Pakistan</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="palau" class="countryName">Palau</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="palestine" class="countryName">Palestine</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="panama" class="countryName">Panama</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="papua_new_guinea" class="countryName">Papua New Guinea</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="paraguay" class="countryName">Paraguay</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="peru" class="countryName">Peru</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="philippines" class="countryName">Philippines</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="poland" class="countryName">Poland</td>
+            <td class="links" id="new">
+              <a href="https://www.x-kom.pl/">X-Kom</a>,
+              <a href="https://www.morele.net/">Morele</a>,
+              <a href="https://www.mediaexpert.pl/">Media Expert</a>,
+              <a href="https://mediamarkt.pl/">Media Markt</a>,
+              <a href="https://www.euro.com.pl/">RTV Euro AGD</a>,
+              <a href="https://www.komputronik.pl/">Komputronik</a>,
+              <a href="https://www.ceneo.pl/">Ceneo</a>,
+              <a href="https://allegro.pl/">Allegro</a>
+            </td>
+            <td class="links" id="usedAndRefurb">
+              <a href="https://www.olx.pl/">OLX</a>,
+              <a href="https://allegro.pl/">Allegro</a>,
+              <a href="https://amso.pl/">AMSO</a>
+            </td>
+            <td class="credits">@notallur</td>
+          </tr>
+          <tr>
+            <td id="portugal" class="countryName">Portugal</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="qatar" class="countryName">Qatar</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="romania" class="countryName">Romania</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="russia" class="countryName">Russia</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="rwanda" class="countryName">Rwanda</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="saint_kitts_and_nevis" class="countryName">
+              Saint Kitts and Nevis
+            </td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="saint_lucia" class="countryName">Saint Lucia</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="saint_vincent_and_the_grenadines" class="countryName">
+              Saint Vincent and the Grenadines
+            </td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="samoa" class="countryName">Samoa</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="san_marino" class="countryName">San Marino</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="sao_tome_and_principe" class="countryName">
+              Sao Tome and Principe
+            </td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="saudi_arabia" class="countryName">Saudi Arabia</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="senegal" class="countryName">Senegal</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="serbia" class="countryName">Serbia</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="seychelles" class="countryName">Seychelles</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="sierra_leone" class="countryName">Sierra Leone</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="singapore" class="countryName">Singapore</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="slovakia" class="countryName">Slovakia</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="slovenia" class="countryName">Slovenia</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="solomon_islands" class="countryName">Solomon Islands</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="somalia" class="countryName">Somalia</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="south_africa" class="countryName">South Africa</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="south_sudan" class="countryName">South Sudan</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="spain" class="countryName">Spain</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="sri_lanka" class="countryName">Sri Lanka</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="sudan" class="countryName">Sudan</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="suriname" class="countryName">Suriname</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="sweden" class="countryName">Sweden</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="switzerland" class="countryName">Switzerland</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="syria" class="countryName">Syria</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="taiwan" class="countryName">China (Taiwan)</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="tajikistan" class="countryName">Tajikistan</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="tanzania" class="countryName">Tanzania</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="thailand" class="countryName">Thailand</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="togo" class="countryName">Togo</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="tonga" class="countryName">Tonga</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="trinidad_and_tobago" class="countryName">
+              Trinidad and Tobago
+            </td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="tunisia" class="countryName">Tunisia</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="turkey" class="countryName">Turkey</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="turkmenistan" class="countryName">Turkmenistan</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="tuvalu" class="countryName">Tuvalu</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="uganda" class="countryName">Uganda</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="ukraine" class="countryName">Ukraine</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="united_arab_emirates" class="countryName">
+              United Arab Emirates
+            </td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="united_kingdom" class="countryName">United Kingdom</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="united_states" class="countryName">United States</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="uruguay" class="countryName">Uruguay</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="uzbekistan" class="countryName">Uzbekistan</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="vanuatu" class="countryName">Vanuatu</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="vietnam" class="countryName">Vietnam</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="yemen" class="countryName">Yemen</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="zambia" class="countryName">Zambia</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+          <tr>
+            <td id="zimbabwe" class="countryName">Zimbabwe</td>
+            <td class="links" id="new"></td>
+            <td class="links" id="usedAndRefurb"></td>
+            <td class="credits"></td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <footer>
+      <p>
+        Something is missing? Contribute to this project on our
+        <a href="https://github.com/NotAllur/global-tech-store-finder">GitHub</a
+        >!
+      </p>
+    </footer>
+    <script src="../js/searchBar.js"></script>
+    <script src="../js/lightSwitch.js"></script>
+  </body>
+</html>

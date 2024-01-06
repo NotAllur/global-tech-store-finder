@@ -1,0 +1,11 @@
+:root {
+  --mainColour: #fff7eb;
+  --textColour: #000000;
+  --accentColour: rgba(255, 229, 191, 0.25);
+}
+#githubLogo {
+  filter: invert(100%);
+}
+#lightSwitch {
+  filter: invert(0%);
+}
