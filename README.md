@@ -47,6 +47,6 @@ Under those you should put links in a structure like the one provided below.
 </td>
 ```
 
-They should be seperated, so put a comma after </a> till the last link.
+They should be seperated, so put a comma after `</a>` till the last link.
 
 When you're done, you can put your @ in between `<td class="credits">` and `</td>`, it can be your GitHub, Reddit or Discord (pick one!). When you're done use click the Commit button. Thank you <3
