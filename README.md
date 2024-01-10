@@ -9,7 +9,7 @@ You can contribute by either opening an issue or directly adding the links.
 
 How to add links directly?
 
-This is an example sniplet of Poland.
+This is an example snippet of Poland.
 
 ```html
 <tr>
