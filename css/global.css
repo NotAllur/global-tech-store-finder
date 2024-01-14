@@ -70,6 +70,8 @@ main {
   margin-top: var(--bodyPadding);
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 table {
@@ -116,17 +118,15 @@ footer > p {
     margin: 0;
   }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
   header > h1 {
     font-size: 1.3em;
   }
 
   table {
     overflow-x: auto;
-    display: block;
     width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
+    border-collapse: collapse;
   }
 
   th,
