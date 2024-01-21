@@ -1,7 +1,7 @@
 :root {
-  --mainColour: #0f0f0f;
-  --textColour: #ffffff;
-  --accentColour: rgba(0, 0, 0, 0.25);
+  --mainColour: rgb(11, 12, 13);
+  --textColour: rgb(255, 255, 255);
+  --accentColour: rgba(11, 12, 13, 0.25);
 }
 #githubLogo {
   filter: invert(0%);
@@ -11,6 +11,7 @@
 }
 @media screen and (max-width: 850px) {
   :root {
-    --mainColour: #000000;
+    --mainColour: rgb(0, 0, 0);
+    --accentColour: rgba(0, 0, 0, 0.25);
   }
 }

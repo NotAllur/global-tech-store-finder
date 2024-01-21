@@ -1,6 +1,6 @@
 :root {
-  --mainColour: #fff7eb;
-  --textColour: #000000;
+  --mainColour: rgb(255, 247, 235);
+  --textColour: rgb(0, 0, 0);
   --accentColour: rgba(255, 229, 191, 0.25);
 }
 #githubLogo {
