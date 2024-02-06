@@ -36,6 +36,9 @@ header {
     background-color: var(--mainColour);
   }
 }
+header > h1 {
+  vertical-align: middle;
+}
 
 #search {
   flex: 1;
@@ -61,8 +64,13 @@ header > ul {
   padding: 0;
 }
 
+#lightSwitch {
+  margin-right: 0.5rem;
+}
+
 #githubLogo,
 #lightSwitch {
+  vertical-align: middle;
   height: 2em;
 }
 
