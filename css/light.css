@@ -1,7 +1,13 @@
+/*Depreciated "Paper" theme
 :root {
   --mainColour: rgb(255, 247, 235);
   --textColour: rgb(0, 0, 0);
   --accentColour: rgba(255, 229, 191, 0.25);
+}*/
+:root {
+  --mainColour: rgb(255, 255, 255);
+  --textColour: rgb(0, 0, 0);
+  --accentColour: rgba(198, 198, 198, 0.25);
 }
 #githubLogo {
   filter: invert(100%);
